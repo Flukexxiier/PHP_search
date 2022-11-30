@@ -1,0 +1,6 @@
+@media only screen and (min-width: 1070px) {
+    .nv_flix_res {
+        display: none;
+        transition: .25s;
+    }
+}

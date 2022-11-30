@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <link rel="stylesheet" href="/style/dev.css">
+    <link rel="stylesheet" href="/style/grid.css">
+    <link rel="preload" as="font" onload="this.rel='stylesheet'" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .c_main_area {padding-top: 88px;}
+    </style>
+
+</head>
+<body id="eventMode_animate" theme="AutoDisplay">
+
+    <div class="fix">
+        <div class="nv_bg">
+          <div class="nv_body">
+
+            <div class="nv_grid">
+
+              <div class="nv_lft">
+                <span class="web_logo">
+                  <a href='./'><i class="fa-solid fa-play"></i></a>
+                  <div class="web_heading"><a href="./">Music</a></div>
+                </span>
+              </div>
+
+              <div class="sr_load" id="srNav">
+                <input type="text" id="srFetch" name="search" class="compo_int_sr form_content" placeholder="ค้นหา..." autofocus requried>
+                <button type="submit" id="btnFetch" name="btn_sr" class="btn_fetch" onclick="save_data(); return false;">ค้นหา</button>
+              </div>
+              
+              <div class="rft">
+                <div class="mode">
+                    <button type="button" class="btn-mode eventMode" id="eventButton" title="ตั้งค่าโหมด"><i class="fa-solid fa-palette"></i></button>
+                  </div>
+                <a href='./' class="log_content"><i class="fa-solid fa-right-to-bracket"></i> เข้าสู่ระบบ</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
+    <div class="c_const">
+            <div class="c_body">
+
+                <div class="c_grid c_col">
+
+                    <div class="aside_fix">
+                        <div class="aside_const">
+                            <div class="aside_body">
+                                <a href='./'><i class="fa-solid fa-house"></i> หน้าแรก</a>
+                                <a href='/latest'><i class="fa-regular fa-clock"></i> ล่าสุด</a>
+                                <a href='/artists'><i class="fa-solid fa-user-group"></i> ศิลปิน</a>
+                                <a href='search.php'><i class="fa-solid fa-magnifying-glass"></i> ค้นหา</a>
+                                <a href='/download'><i class="fa-solid fa-download"></i> ดาวน์โหลด</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="c_main">
+                        <div class="c_main_area">
+                            <div class="c_main_area_grid">
+                                <div class="c_main_content_box">
+                                    <form method="get" id="formLoad">
+
+                                        <div class="sr_content_position">
+                                            <div class="sr_body" id="srBody">
+                                                <h1 class="h_area">ค้นหา</h1>
+                                                <input type="text" id="srFetch" name="search" class="compo_int_sr form_content" placeholder="ค้นหา..." autofocus requried>
+                                                <button type="submit" id="btnFetch" name="btn_sr" class="btn_fetch" onclick="save_data(); return false;">ค้นหา</button>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="root grid-items bg_elements">
+
+                                            <div class="box">
+                                                <div class="preview">Preview:</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="box_title">Name:</div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="box_time">Duration:</div>
+                                            </div>
+                                            <div class="box" style="text-align: right;">
+                                                <div class="action">Action:</div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="scrolled">
+
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto velit eaque ea sapiente dolorem, ipsam est temporibus ratione magni rem quidem eligendi dolores asperiores magnam earum. Veritatis aut molestias harum!
+                                                    Rem quae deserunt earum cupiditate laudantium consequatur, iure asperiores facilis qui autem libero eos dolor! Vitae nam alias dolorem quidem repellendus perspiciatis magnam placeat. Modi, quam. Porro magnam doloribus doloremque?
+                                                    Eum saepe placeat nostrum perferendis, culpa, nam nulla, veritatis voluptates aspernatur nemo iste soluta magni sed amet. Ea deserunt similique illum id! Qui, a. Perspiciatis laudantium consequatur nisi consequuntur possimus.
+                                                    Provident eveniet ipsum ratione at explicabo maiores obcaecati assumenda perspiciatis, alias soluta aperiam autem delectus ad totam quis, aspernatur, ab omnis. Corporis doloremque quam velit neque libero quod dolores fugit.</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> LISA ตัวแม่แฟชั่น ใส่อะไรบ้างวันนี้ ออกสื่อแป็บเดียว SOLD OUT ไปแล้ว 2 ชิ้นราคาจุกๆ | BLACKLISA</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> LISA ตัวแม่แฟชั่น ใส่อะไรบ้างวันนี้ ออกสื่อแป็บเดียว SOLD OUT ไปแล้ว 2 ชิ้นราคาจุกๆ | BLACKLISA</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> LISA ตัวแม่แฟชั่น ใส่อะไรบ้างวันนี้ ออกสื่อแป็บเดียว SOLD OUT ไปแล้ว 2 ชิ้นราคาจุกๆ | BLACKLISA</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> LISA ตัวแม่แฟชั่น ใส่อะไรบ้างวันนี้ ออกสื่อแป็บเดียว SOLD OUT ไปแล้ว 2 ชิ้นราคาจุกๆ | BLACKLISA</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> LISA ตัวแม่แฟชั่น ใส่อะไรบ้างวันนี้ ออกสื่อแป็บเดียว SOLD OUT ไปแล้ว 2 ชิ้นราคาจุกๆ | BLACKLISA</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> LISA ตัวแม่แฟชั่น ใส่อะไรบ้างวันนี้ ออกสื่อแป็บเดียว SOLD OUT ไปแล้ว 2 ชิ้นราคาจุกๆ | BLACKLISA</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> LISA ตัวแม่แฟชั่น ใส่อะไรบ้างวันนี้ ออกสื่อแป็บเดียว SOLD OUT ไปแล้ว 2 ชิ้นราคาจุกๆ | BLACKLISA</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> LISA ตัวแม่แฟชั่น ใส่อะไรบ้างวันนี้ ออกสื่อแป็บเดียว SOLD OUT ไปแล้ว 2 ชิ้นราคาจุกๆ | BLACKLISA</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> LISA ตัวแม่แฟชั่น ใส่อะไรบ้างวันนี้ ออกสื่อแป็บเดียว SOLD OUT ไปแล้ว 2 ชิ้นราคาจุกๆ | BLACKLISA</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="root grid-items no_margin-top elements_box contents">
+
+                                                <div class="box">
+                                                    <div class="preview"><img src="/img/austin-neill-hgO1wFPXl3I-unsplash.jpg" alt=""></div>
+                                                </div>
+                                                <div class="box box_padding_lft">
+                                                    <div class="box_title"><a href="#"><span class="title"> LISA ตัวแม่แฟชั่น ใส่อะไรบ้างวันนี้ ออกสื่อแป็บเดียว SOLD OUT ไปแล้ว 2 ชิ้นราคาจุกๆ | BLACKLISA</span></a></div>
+                                                </div>
+                                                <div class="box">
+                                                    <div class="box_time"><span class="time">30:45</span></div>
+                                                </div>
+                                                <div class="box" style="text-align: right;">
+                                                    <div class="action"> <a href="" class="btnLoad"><i class="fa-solid fa-download"></i> ดาวน์โหลด</a> </div>
+                                                </div>
+    
+                                            </div>
+
+                                        </div>
+                                        
+                                    </form>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="./js/dev.js"></script>
+        <script src="./js/form.js"></script>
+        <script src="./js/search.js"></script>
+        <script rel="preload" as="script" src="./js/extension.js"></script>
+        
+</body>
+</html>

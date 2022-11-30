@@ -1,0 +1,10 @@
+<div class='grid_content'>
+                    <div class='box'>
+                        <p class='txt_p_fetch'>
+                            <img src='${video.thumbnails[0].url}' /> <br/>
+                            <a href='content.php?data=${video.video_id}' class='a_fetch'> ${video.title}</a> <br/>
+                            <span class='viewer' title='ยอดวิว'> ${video.number_of_views} </span> &nbsp;
+                            <span class='viewer' title='ระยะเวลา'> ${video.video_length} Duration</span>
+                        </p>
+                    </div>
+                </div>
